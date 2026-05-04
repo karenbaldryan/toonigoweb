@@ -1,7 +1,7 @@
 services:
   web:
-    image: IMAGE_PLACEHOLDER
+    image: ghcr.io/karenbaldryan/toonigoweb:latest
     container_name: toonigoweb
     restart: unless-stopped
-    ports:
-      - "9080:80"
+    expose:
+      - "80"
