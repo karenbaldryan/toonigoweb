@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: toonigoweb:latest
+    container_name: toonigoweb
+    restart: unless-stopped
+    ports:
+      - "9080:80"
